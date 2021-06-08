@@ -1,3 +1,9 @@
+### O que esse projeto faz ?
+Ele irá excluir a necessidade de algumas certas regras de negócio, através de endpoints, utilizando estruturas disponíveis e já prontas para retornar valores que irão validar certas informações. 
+
+### Por que esse projeto é útil?
+Ele é útil pois torna o front-end mais leve, de maneira que as regras de negócios locais não necessitem mais de utilização. 
+
 ### Como usar (endpoints)
 
 #### Validação de CPF
