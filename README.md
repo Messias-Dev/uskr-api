@@ -49,6 +49,8 @@ Ele é útil pois torna o front-end mais leve, de maneira que as regras de negó
   - Se não enviou de forma correta.
 - Forma correta: (String, dd/MM/yyyy).
 
+----
+
 ### CONTRIBUTING:
 
 + Issue Request:
