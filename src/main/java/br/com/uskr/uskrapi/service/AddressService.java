@@ -18,17 +18,14 @@ public class AddressService {
         if (cep.trim().length() != 8) {
             throw new InvalidDataException("CEP invalido");
         }
-        if (cep.matches("^\\\\d+$")) {
+        if (!cep.matches("[0-9]+")) {
             throw new InvalidDataException("CEP deve conter apenas numeros.");
         }
     }
 
     public void validate(Address address) throws SystemException, InvalidDataException {
-        if (address == null) {
+        if (address.getCep() == null || address.getCep().trim().isEmpty()) {
             throw new InvalidDataException("CEP invalido");
-        }
-        if (address.getCep().trim().isEmpty()) {
-            throw new SystemException();
         }
 
     }
