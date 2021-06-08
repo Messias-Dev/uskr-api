@@ -4,6 +4,8 @@ Ele irá excluir a necessidade de algumas certas regras de negócio, através de
 ### Por que esse projeto é útil?
 Ele é útil pois torna o front-end mais leve, de maneira que as regras de negócios locais não necessitem mais de utilização. 
 
+---
+
 ### Como usar (endpoints)
 
 #### Validação de CPF
@@ -58,11 +60,11 @@ Ele é útil pois torna o front-end mais leve, de maneira que as regras de negó
     * Melhorar a conversão de data como String para Local date.
     * Melhorar recebimento de String date.
 
-###Como sugerir uma nova feature:
+#### Como sugerir uma nova feature:
 
 O dev deverá entrar em contato com algum dos integrantes do projeto (através dos e-mails disponibilizados), informar qual a parte do projeto que deseja contribuir, fazer um fork do projeto, criar uma branch com o nome “feature/{mvc}-{model}” passando nas chaves a camada do MVC e o Model respectivo.
 
-####Como configurar o seu ambiente e rodar testes:
+#### Como configurar o seu ambiente e rodar testes:
 
                 
 1. Como configurar o seu ambiente e rodar testes: 
@@ -78,3 +80,11 @@ https://github.com/Messias-Dev/uskr-api
 5. Entrar na url:
 http://localhost:8080/swagger-ui.html e testar os endpoints descritos na documentação. 
 
+#### Os tipos de contribuições que você está procurando:
+Novas regras de negócio.
+Seu roadmap ou visão para o projeto:
+Prover regras de negócio através de endpoints para facilitar o desenvolvimento de sistemas diversos.
+Como contribuidores devem (ou não devem) entrar em contato com você:
+Caso precise de um suporte entre em contato com os seguintes emails: Gabriel.veloso@ucsal.edu.br, messias.lsn@gmail.com, murillo.sant23@gmail.com ou arthur.xavier@gmail.com
+
+---
