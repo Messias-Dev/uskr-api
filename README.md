@@ -28,7 +28,7 @@
 - passa JSON {“birthdate”: “date”} (String) como parâmetro,
 - Código 200: 
   -  Retorna true se for maior de idade (18 anos) e false se não.
-Código 400: 
+- Código 400: 
   - Se não enviou de forma correta.
 - Forma correta: (String, dd/MM/yyyy).
 
@@ -39,7 +39,7 @@ Código 400:
 - passa JSON {“birthdate”: “date”} (String) como parâmetro,
 - Código 200: 
   -  Retorna inteiro com valor da idade.
-Código 400: 
+- Código 400: 
   - Se não enviou de forma correta.
 - Forma correta: (String, dd/MM/yyyy).
 
