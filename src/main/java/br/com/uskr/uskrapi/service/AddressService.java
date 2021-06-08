@@ -1,18 +1,36 @@
 package br.com.uskr.uskrapi.service;
 
-import org.springframework.stereotype.Service;
-
+import br.com.uskr.uskrapi.model.Address;
 import br.com.uskr.uskrapi.util.EmptyDataException;
+import br.com.uskr.uskrapi.util.InvalidDataException;
+import br.com.uskr.uskrapi.util.SystemException;
+import org.springframework.stereotype.Service;
 
 @Service
 public class AddressService {
 
-	// TODO validar CEP e retornar exception se necessário
-	public void validate(String cep) throws EmptyDataException {
-		if (cep == null || cep.trim().isEmpty()) {
-			throw new EmptyDataException("CEP ta vazio");
-		}
-		// TODO validar apenas numeros no CEP e 8 digitos
-	}
+
+    public void validate(String cep) throws EmptyDataException, InvalidDataException {
+
+        if (cep == null || cep.trim().isEmpty()) {
+            throw new EmptyDataException("CEP ta vazio");
+        }
+        if (cep.trim().length() != 8) {
+            throw new InvalidDataException("CEP invalido");
+        }
+        if (cep.matches("^\\\\d+$")) {
+            throw new InvalidDataException("CEP deve conter apenas numeros.");
+        }
+    }
+
+    public void validate(Address address) throws SystemException, InvalidDataException {
+        if (address == null) {
+            throw new InvalidDataException("CEP invalido");
+        }
+        if (address.getCep().trim().isEmpty()) {
+            throw new SystemException();
+        }
+
+    }
 
 }
